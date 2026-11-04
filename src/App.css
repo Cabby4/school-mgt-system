@@ -1,0 +1,626 @@
+
+/* ========================================
+   RUBIES AND GOLD SCHOOL
+   Premium Navy Blue & Gold Theme
+======================================== */
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #142544;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --school-navy: #092957;
+  --school-blue: #123f7a;
+  --school-gold: #f2b92f;
+  --school-gold-dark: #d99a08;
+  --school-cream: #fff8e8;
+  --school-light: #f4f7fc;
+  --school-text: #263650;
+  --school-muted: #68758a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--school-text);
+  background: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--school-navy);
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.97) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #edf0f5;
+}
+
+.navbar .container {
+  min-height: 64px;
+}
+
+.navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--school-navy) !important;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand svg {
+  color: var(--school-gold-dark);
+  font-size: 1.8rem;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: var(--school-navy);
+  font-size: 0.94rem;
+  font-weight: 600;
+  padding: 10px 12px !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--school-gold-dark);
+}
+
+.navbar .btn-primary {
+  border: 1px solid var(--school-gold);
+  border-radius: 50px;
+  padding: 11px 23px !important;
+  background: var(--school-gold);
+  color: var(--school-navy);
+  font-weight: 700;
+}
+
+.navbar .btn-primary:hover {
+  background: #ffd363;
+  border-color: #ffd363;
+  color: var(--school-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(217, 154, 8, 0.2);
+}
+
+.navbar-toggler {
+  border-color: #dce3ee;
+  color: var(--school-navy);
+  box-shadow: none !important;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+  border-radius: 8px;
+  font-weight: 650;
+  transition: all 0.25s ease;
+}
+
+.btn-lg {
+  padding: 13px 25px;
+  font-size: 0.98rem;
+}
+
+.btn-warning {
+  background: var(--school-gold);
+  border-color: var(--school-gold);
+  color: var(--school-navy);
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+  background: #ffd363;
+  border-color: #ffd363;
+  color: var(--school-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(242, 185, 47, 0.22);
+}
+
+.btn-outline-light {
+  border-width: 1.5px;
+}
+
+.btn-outline-light:hover {
+  color: var(--school-navy);
+  background: white;
+}
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+#home {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(45, 94, 151, 0.5),
+      transparent 48%
+    ),
+    linear-gradient(120deg, #061c3e 0%, #0a3268 65%, #17467c 100%) !important;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 420px;
+  height: 420px;
+  right: -150px;
+  top: -170px;
+  border: 55px solid rgba(242, 185, 47, 0.15);
+  border-radius: 50%;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  left: -150px;
+  bottom: -175px;
+  border: 35px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+}
+
+#home > .container {
+  position: relative;
+  z-index: 1;
+}
+
+#home .badge {
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: var(--school-gold) !important;
+  color: var(--school-navy) !important;
+  font-size: 0.8rem;
+  font-weight: 750;
+  letter-spacing: 0.3px;
+  white-space: normal;
+}
+
+#home h1 {
+  max-width: 760px;
+  color: white;
+  font-size: clamp(2.4rem, 5vw, 4.25rem);
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+
+#home p {
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+}
+
+#home .bg-white {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18) !important;
+}
+
+#home .bg-white h3 {
+  font-size: 1.6rem;
+}
+
+#home .bg-white p {
+  color: var(--school-muted) !important;
+  font-size: 0.98rem;
+}
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+#about,
+#academics,
+#admissions,
+#contact {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important;
+}
+
+#about .text-primary,
+#academics .text-primary,
+#contact .text-primary {
+  color: var(--school-gold-dark) !important;
+  font-size: 0.82rem;
+  letter-spacing: 1.8px;
+}
+
+#about h2,
+#academics h2,
+#contact h2 {
+  font-size: clamp(1.9rem, 3vw, 2.7rem);
+  letter-spacing: -1px;
+}
+
+#about p,
+#academics p,
+#contact p {
+  color: var(--school-muted) !important;
+}
+
+/* ========================================
+   ABOUT OUR SCHOOL
+======================================== */
+
+#about {
+  background: white;
+}
+
+#about .row {
+  row-gap: 30px;
+}
+
+#about h2 {
+  margin-bottom: 22px;
+}
+
+#about .bg-light {
+  background: var(--school-cream) !important;
+}
+
+#about .border {
+  border: 1px solid #f0e5c8 !important;
+}
+
+#about .rounded-4 {
+  border-radius: 20px !important;
+}
+
+#about .bg-light h3 {
+  color: var(--school-navy);
+  font-size: 1.45rem;
+}
+
+#about .list-group-item {
+  padding: 12px 0;
+  color: var(--school-text);
+  border-color: #eee4ce;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   ACADEMIC PROGRAMMES
+======================================== */
+
+#academics {
+  background: var(--school-light) !important;
+}
+
+#academics .text-center > p {
+  max-width: 650px;
+  margin: 12px auto 0;
+}
+
+#academics .card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e8edf5 !important;
+  box-shadow: 0 5px 20px rgba(9, 41, 87, 0.04) !important;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+#academics .card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(242, 185, 47, 0.75) !important;
+  box-shadow: 0 18px 35px rgba(9, 41, 87, 0.1) !important;
+}
+
+#academics .card-body {
+  padding: 30px !important;
+}
+
+#academics .card h4 {
+  margin-bottom: 14px;
+  color: var(--school-navy) !important;
+  font-size: 1.25rem;
+}
+
+#academics .card p {
+  margin-bottom: 0;
+  font-size: 0.94rem;
+}
+
+/* ========================================
+   ADMISSIONS CALL TO ACTION
+======================================== */
+
+#admissions .bg-primary {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px !important;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(57, 105, 161, 0.4),
+      transparent 45%
+    ),
+    var(--school-navy) !important;
+  box-shadow: 0 18px 45px rgba(9, 41, 87, 0.14);
+}
+
+#admissions h2 {
+  color: white;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+#admissions p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.83) !important;
+}
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+
+#contact {
+  background: #f7f9fc !important;
+}
+
+#contact .card {
+  overflow: hidden;
+  border: 1px solid #e8edf5 !important;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 15px 45px rgba(9, 41, 87, 0.07) !important;
+}
+
+#contact .form-label {
+  color: var(--school-navy);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+#contact .form-control {
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+  color: var(--school-text);
+  background: white;
+  box-shadow: none;
+}
+
+#contact textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+#contact .form-control:focus {
+  border-color: var(--school-blue);
+  box-shadow: 0 0 0 3px rgba(18, 63, 122, 0.1);
+}
+
+#contact .form-control::placeholder {
+  color: #9aa5b5;
+  font-size: 0.9rem;
+}
+
+#contact .btn-primary {
+  min-height: 49px;
+  border-color: var(--school-navy);
+  background: var(--school-navy);
+  font-weight: 700;
+}
+
+#contact .btn-primary:hover {
+  border-color: var(--school-blue);
+  background: var(--school-blue);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   ACCESSIBILITY & ANIMATIONS
+======================================== */
+
+:focus-visible {
+  outline: 3px solid var(--school-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #home .col-lg-7 {
+    animation: schoolFadeUp 0.7s ease both;
+  }
+
+  #home .col-lg-5 {
+    animation: schoolFadeUp 0.7s ease 0.15s both;
+  }
+
+  @keyframes schoolFadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    padding: 15px 0 8px;
+  }
+
+  .navbar .navbar-nav {
+    align-items: stretch !important;
+    gap: 4px !important;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 4px !important;
+  }
+
+  .navbar .nav-item .btn {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  #home .container {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  #home h1 {
+    max-width: 680px;
+  }
+
+  #about,
+  #academics,
+  #admissions,
+  #contact {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+  }
+}
+
+/* ========================================
+   MOBILE PHONES
+======================================== */
+
+@media (max-width: 575.98px) {
+  .navbar .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .navbar .navbar-brand {
+    max-width: 245px;
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .navbar-brand svg {
+    flex-shrink: 0;
+    font-size: 1.6rem;
+  }
+
+  #home .container {
+    padding-top: 25px !important;
+    padding-bottom: 35px !important;
+  }
+
+  #home h1 {
+    font-size: clamp(2.15rem, 10vw, 3.2rem);
+    letter-spacing: -1px;
+  }
+
+  #home p {
+    font-size: 0.96rem;
+  }
+
+  #home .btn-lg {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 12px;
+  }
+
+  #home .bg-white {
+    padding: 24px !important;
+  }
+
+  #about,
+  #academics,
+  #admissions,
+  #contact {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+  }
+
+  #about .bg-light {
+    padding: 25px !important;
+  }
+
+  #academics .card-body {
+    padding: 24px !important;
+  }
+
+  #admissions .bg-primary {
+    padding: 30px 20px !important;
+  }
+
+  #contact .card-body {
+    padding: 23px !important;
+  }
+
+  #about h2,
+  #academics h2,
+  #contact h2 {
+    font-size: 1.9rem;
+  }
+}
