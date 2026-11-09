@@ -28,7 +28,7 @@ function Navbar() {
 
           <span className="brand-copy">
             <strong>
-              RUBIES <span>&amp; GOLD</span>
+              School <span>&amp; web</span>
             </strong>
             <small>LEARNING • CHARACTER • EXCELLENCE</small>
           </span>

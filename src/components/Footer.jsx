@@ -25,14 +25,14 @@ function Footer() {
 
               <span className="footer-brand-copy">
                 <strong>
-                  RUBIES <span>&amp; GOLD</span>
+                  School <span>&amp; Web</span>
                 </strong>
                 <small>LEARNING • CHARACTER • EXCELLENCE</small>
               </span>
             </Link>
 
             <p>
-              At Rubies &amp; Gold School, we nurture curious minds,
+              At School &amp; web, we nurture curious minds,
               build strong character, and inspire every learner to
               achieve their full potential.
             </p>
@@ -87,7 +87,7 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>
-            © {currentYear} Rubies &amp; Gold School. All rights reserved.
+            © {currentYear} School &amp; Web. All rights reserved.
           </p>
 
           <p className="footer-motto">

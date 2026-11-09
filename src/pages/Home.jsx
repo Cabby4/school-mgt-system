@@ -63,7 +63,7 @@ function Home() {
               <div className="col-lg-6 hero-copy">
                 <div className="hero-eyebrow">
                   <span className="eyebrow-line" />
-                  WELCOME TO RUBIES &amp; GOLD
+                  WELCOME TO School &amp; Web
                 </div>
 
                 <h1>
@@ -225,7 +225,7 @@ function Home() {
                 </h2>
 
                 <p className="section-lead">
-                  At Rubies and Gold School, education is about more than
+                  At School Web, education is about more than
                   lessons and examinations. It is about discovering
                   potential, developing confidence, and preparing children
                   to make a positive difference.
